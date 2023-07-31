@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
+import { styled } from 'styled-components';
 
 class Header extends Component {
   render() {
     return (
-      <header>
+      <StyledHeader>
         <h1>Sistema Solar</h1>
-      </header>
+      </StyledHeader>
     );
   }
 }
+
+const StyledHeader = styled.header`
+  text-align: center;
+`;
 
 export default Header;

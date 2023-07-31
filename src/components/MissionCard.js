@@ -1,19 +1,37 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { styled } from 'styled-components';
 
 class MissionCard extends Component {
   render() {
     const { name, year, country, destination } = this.props;
     return (
-      <div data-testid="mission-card">
-        <p data-testid="mission-name">{name}</p>
-        <p data-testid="mission-year">{year}</p>
-        <p data-testid="mission-country">{country}</p>
-        <p data-testid="mission-destination">{destination}</p>
-      </div>
+      <Card data-testid="mission-card">
+        <ul>
+          <li data-testid="mission-name">{name}</li>
+          <li data-testid="mission-year">{year}</li>
+          <li data-testid="mission-country">{country}</li>
+          <li data-testid="mission-destination">{destination}</li>
+        </ul>
+      </Card>
     );
   }
 }
+
+const Card = styled.div`
+  background-color: #32343d;
+  max-width: 230px;
+  width: 100%;
+  margin: 16px;
+
+  ul {
+    padding: 0 25px 0 30px;
+
+    li {
+      margin-bottom: 12px;
+    }
+  }
+`;
 
 MissionCard.propTypes = {
   name: PropTypes.string.isRequired,
