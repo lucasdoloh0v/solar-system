@@ -20,6 +20,7 @@ class MissionCard extends Component {
 
 const Card = styled.div`
   background-color: #32343d;
+  border-radius: 4%;
   max-width: 230px;
   width: 100%;
   margin: 16px;

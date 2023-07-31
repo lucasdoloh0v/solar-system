@@ -18,13 +18,12 @@ class PlanetCard extends Component {
 
 const Card = styled.div`
   text-align: center;
-  background-color: #8E8E8E;
+  background-color: #32343d;
   border-radius: 4%;
   max-width: 230px;
   width: 100%;
 
   p {
-    background-color: #18191D;
     margin: 1em 2px;
     border-radius: 10px;
   }
